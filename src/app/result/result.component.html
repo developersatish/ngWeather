@@ -1,0 +1,7 @@
+<div *ngIf="city.name" class="result">
+    <h3>{{city.name}}</h3>
+    <p>Description: {{city.des}}</p>
+    <p>Current temp: {{city.temp | temperatureConverter: 'F' }}<span>&#176;</span>F</p>
+    <p>Feels like: {{city.feelLike | temperatureConverter: 'F'}}<span>&#176;</span>F</p>
+    <p>Wind speed: {{city.windSpeed}}mph</p>
+</div>

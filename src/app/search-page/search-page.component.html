@@ -1,0 +1,15 @@
+<div class="search-page d-flex justify-content-center">
+    <div>
+
+        <div>
+            <app-form (search)="search($event)"></app-form>
+        </div>
+        <div class="alert alert-danger" role="alert" *ngIf="errorMsg">
+            {{errorMsg}}
+        </div>
+        <div>
+            <app-result [city]="cityData"></app-result>
+        </div>
+    </div>
+
+</div>
